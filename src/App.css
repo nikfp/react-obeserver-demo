@@ -40,3 +40,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.list-item {
+  border: 2px solid white;
+  margin: 8px;
+  padding: 4px;
+  font-size: 3rem;
+}
+
+.bottom {
+  border: 2px solid white;
+  margin: 8px;
+  font-size: 3rem;
+  height: 50rem;
+}
