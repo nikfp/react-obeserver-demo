@@ -1,30 +1,15 @@
-# React + TypeScript + Vite
+# React demo of using intersection observer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This shows the concept in the simplest terms I can come up with. 
 
-Currently, two official plugins are available:
+The `addEntries` function in `App.tsx` can be substituted for any function that could return more list entries, and any type of entry could be used. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This example fills an array 10 entries at a time with a random number value. 
 
-## Expanding the ESLint configuration
+## How to install and run
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To install, clone the repo and run `pnpm install`
 
-- Configure the top-level `parserOptions` property like this:
+If you use another package manager, delete the `pnpm-lock.yaml` file and then install with your package manager of choice. 
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run, use `pnpm dev` or if you use another package manager, use it to run the `dev` script
